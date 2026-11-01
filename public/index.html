@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Server</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="page-container">
+        <section class="registration-card">
+            <div class="icon">👤</div>
+
+            <h1>Create Your Account</h1>
+            <p class="subtitle">
+                Register below to create your account.
+            </p>
+
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Minimum 8 characters"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Re-enter your password"
+                        autocomplete="new-password"
+                        required
+                    >
+                </div>
+
+                <button type="submit" id="registerButton">
+                    Register Now
+                </button>
+
+                <div id="message" class="message" role="status"
+                     aria-live="polite"></div>
+            </form>
+
+            <p class="footer-text">
+                User Registration Server | Node.js Practical
+            </p>
+        </section>
+    </main>
+
+    <script src="/script.js"></script>
+</body>
+</html>

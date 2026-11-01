@@ -1,0 +1,17 @@
+
+{
+  "name": "user-registration-server",
+  "version": "1.0.0",
+  "description": "User Registration Server using Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "registration",
+    "server-side-validation"
+  ],
+  "author": "",
+  "license": "ISC"
+}

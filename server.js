@@ -5,7 +5,7 @@ const path = require("path");
 const EventEmitter = require("events");
 const { validateRegistration } = require("./modules/validator");
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const serverEvents = new EventEmitter();
 
 const publicDir = path.join(__dirname, "public");
@@ -195,6 +195,6 @@ const server = http.createServer((req, res) => {
     });
 });
 
-server.listen(PORT, () => {
-    console.log(`User Registration Server running at http://localhost:${PORT}`);
+server.listen(PORT, "0.0.0.0", () => {
+    console.log(`User Registration Server running on port ${PORT}`);
 });
